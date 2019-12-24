@@ -1,7 +1,7 @@
 // Variables
 
-$clr-primary: white;
-$clr-accent: rgb(8, 8, 36);
+$clr-primary: hsl(0, 47.2%, 85.9%);
+$clr-accent: hsl(240, 56.5%, 9%);
 
 // Fonts
 
@@ -58,13 +58,16 @@ section {
   @at-root &__hero-text {
     font-size: 3em;
     font-family: "Courgette", cursive;
+    text-align: center;
   }
 
   @at-root &__countdown {
-    height: 7em;
+    // height: 7em;
+    text-align: center;
     width: 90vw;
-    background-color: blue;
+    // background-color: blue;
     margin-top: 2rem;
+    font-size: 2.5em;
   }
 }
 

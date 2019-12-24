@@ -33,8 +33,8 @@ section {
 }
 
 .landing {
-  background-color: #080824;
-  color: white;
+  background-color: #0a0a24;
+  color: #eccaca;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,12 +53,13 @@ section {
 .landing__hero-text {
   font-size: 3em;
   font-family: "Courgette", cursive;
+  text-align: center;
 }
 
 .landing__countdown {
-  height: 7em;
+  text-align: center;
   width: 90vw;
-  background-color: blue;
   margin-top: 2rem;
+  font-size: 2.5em;
 }
 /*# sourceMappingURL=style.css.map */
