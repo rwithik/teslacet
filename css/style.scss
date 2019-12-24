@@ -1,3 +1,10 @@
+// Variables
+
+$clr-primary: white;
+$clr-accent: rgb(8, 8, 36);
+
+// Fonts
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -8,6 +15,18 @@
       format("truetype");
 }
 
+@font-face {
+  font-family: "Courgette";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Courgette Regular"), local("Courgette-Regular"),
+    url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoP.ttf)
+      format("truetype");
+}
+
+// Styles begin here.
+
 *,
 *:after,
 *:before {
@@ -17,10 +36,36 @@
 }
 
 body {
-  padding: 0.7rem;
   font-family: "Montserrat", sans-serif;
 }
 
 section {
+  padding: 0.7rem;
   min-height: 100vh;
 }
+
+// Classes
+
+.landing {
+  background-color: $clr-accent;
+  color: $clr-primary;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @at-root &__hero-text {
+    font-size: 3em;
+    font-family: "Courgette", cursive;
+  }
+
+  @at-root &__countdown {
+    height: 7em;
+    width: 90vw;
+    background-color: blue;
+    margin-top: 2rem;
+  }
+}
+
+// Media Query

@@ -6,6 +6,14 @@
   src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Courgette";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Courgette Regular"), local("Courgette-Regular"), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoP.ttf) format("truetype");
+}
+
 *,
 *:after,
 *:before {
@@ -16,11 +24,41 @@
 }
 
 body {
-  padding: 0.7rem;
   font-family: "Montserrat", sans-serif;
 }
 
 section {
+  padding: 0.7rem;
   min-height: 100vh;
+}
+
+.landing {
+  background-color: #080824;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing__hero-text {
+  font-size: 3em;
+  font-family: "Courgette", cursive;
+}
+
+.landing__countdown {
+  height: 7em;
+  width: 90vw;
+  background-color: blue;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
