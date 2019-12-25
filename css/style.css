@@ -108,15 +108,24 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container__card {
   width: 48%;
-  height: 200px;
+  height: auto;
   margin: 1% 1%;
   background-color: whitesmoke;
+  border-radius: 5px;
+  overflow: hidden;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .card__card-image {
@@ -125,7 +134,7 @@ img {
 
 .card__title {
   text-align: center;
-  padding: 0.1rem;
+  padding: 0.2rem;
 }
 
 .card-image__img {
@@ -162,8 +171,9 @@ img {
   overflow: scroll;
   background-color: white;
   margin: auto auto;
-  -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.9);
 }
 
 .modal--hidden {
@@ -205,6 +215,55 @@ img {
   }
   100% {
     background-position: 100% 0%;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .container__card {
+    width: 20%;
+  }
+  .about-tesla,
+  .about-eee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-tesla__content,
+  .about-eee__content {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+  .about-eee.section__title,
+  .about-tesla.section__title {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    height: 100%;
+    background-image: url("../images/1.png");
+    background-image: url("../../images/1.png");
+  }
+  .about-eee.section__title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about-eee__content {
+    text-align: right;
+  }
+  .modal {
+    width: 50vw;
+    overflow-x: hidden;
+  }
+  .modal__modal-image {
+    max-width: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */

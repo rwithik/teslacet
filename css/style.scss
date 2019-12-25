@@ -119,14 +119,19 @@ img {
   // background-color: blueviolet;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .container__card {
   width: 48%;
-  height: 200px;
+  height: auto;
   margin: 1% 1%;
   background-color: whitesmoke;
+  border-radius: 5px;
+  overflow: hidden;
   box-shadow: 0 0 15px 0 rgba(black, 0.5);
+  cursor: pointer;
 }
 
 .card__card-image {
@@ -135,7 +140,7 @@ img {
 
 .card__title {
   text-align: center;
-  padding: 0.1rem;
+  padding: 0.2rem;
 }
 
 .card-image__img {
@@ -163,7 +168,8 @@ img {
   overflow: scroll;
   background-color: $clr-primary;
   margin: auto auto;
-  box-shadow: 0 0 0 100px rgba(black, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 0 0 100vw rgba(black, 0.9);
 
   @at-root &--hidden {
     display: none;
@@ -201,3 +207,49 @@ img {
 }
 
 // Media Query Shtuff
+
+@media only screen and (min-width: 450px) {
+  .container__card {
+    width: 20%;
+  }
+
+  .about-tesla,
+  .about-eee {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    @at-root &__content {
+      flex-basis: 55%;
+    }
+  }
+
+  .about-eee.section__title,
+  .about-tesla.section__title {
+    flex-basis: 40%;
+    height: 100%;
+    // Fix: Fix before deploy.
+    background-image: url("../images/1.png");
+    background-image: url("../../images/1.png");
+  }
+
+  .about-eee.section__title {
+    order: 1;
+  }
+
+  .about-eee__content {
+    // Fix: this ;_;
+    text-align: right;
+  }
+
+  .modal {
+    // Todo: Fiiix thiiiisss...
+    width: 50vw;
+    overflow-x: hidden;
+
+    @at-root &__modal-image {
+      max-width: 400px;
+    }
+  }
+}
