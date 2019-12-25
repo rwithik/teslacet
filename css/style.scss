@@ -1,7 +1,12 @@
 // Variables
 
-$clr-primary: hsl(0, 47.2%, 85.9%);
-$clr-accent: hsl(240, 56.5%, 9%);
+// Todo: Colooorrrssss!!
+
+// $clr-primary: hsl(0, 47.2%, 85.9%);
+// $clr-accent: hsl(240, 56.5%, 9%);
+
+$clr-primary: white;
+$clr-accent: black;
 
 // Fonts
 
@@ -44,6 +49,10 @@ section {
   min-height: 100vh;
 }
 
+img {
+  width: 100%;
+}
+
 // Classes
 
 .landing {
@@ -59,12 +68,12 @@ section {
     font-size: 3em;
     font-family: "Courgette", cursive;
     text-align: center;
-    // Fix: Nope :\
+    // Fix: Nope :/
     background-image: linear-gradient(45deg, red, blue);
     background-size: 400%;
     background-clip: text;
     color: transparent;
-    animation: coming-soon-animation 3s infinite alternate;
+    animation: coming-soon-animation 20s infinite alternate;
   }
 
   @at-root &__countdown {
@@ -73,6 +82,109 @@ section {
     width: 90vw;
     margin-top: 2rem;
     font-size: 2.5em;
+  }
+}
+
+.section__title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section--dark {
+  background-color: $clr-accent;
+  color: $clr-primary;
+}
+
+.section--light {
+  background-color: $clr-primary;
+  color: $clr-accent;
+}
+
+.footer {
+  min-height: 50vh !important;
+  height: 50vh;
+
+  .section__title {
+    font-size: 2em;
+  }
+}
+
+// Events
+
+.events__container {
+  max-width: 96vw;
+  height: auto;
+  margin: 0 auto;
+  // background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container__card {
+  width: 48%;
+  height: 200px;
+  margin: 1% 1%;
+  background-color: whitesmoke;
+  box-shadow: 0 0 15px 0 rgba(black, 0.5);
+}
+
+.card__card-image {
+  overflow: hidden;
+}
+
+.card__title {
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.card-image__img {
+  width: 100%;
+  transform: scale(1);
+  transition: transform 350ms ease-in;
+
+  @at-root &:hover {
+    transform: scale(1.1);
+  }
+}
+
+// Modals
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0.4rem 1rem 1rem 1rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 96vw;
+  height: 90vh;
+  overflow: scroll;
+  background-color: $clr-primary;
+  margin: auto auto;
+  box-shadow: 0 0 0 100px rgba(black, 0.9);
+
+  @at-root &--hidden {
+    display: none;
+  }
+
+  @at-root &__close-btn {
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  @at-root &__title {
+    padding-top: 0.6rem;
+    font-size: 2em;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+  }
+  @at-root &__modal-image {
+    margin-top: 0.4rem;
   }
 }
 

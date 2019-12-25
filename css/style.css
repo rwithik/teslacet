@@ -32,9 +32,13 @@ section {
   min-height: 100vh;
 }
 
+img {
+  width: 100%;
+}
+
 .landing {
-  background-color: #0a0a24;
-  color: #eccaca;
+  background-color: black;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,8 +62,8 @@ section {
   background-size: 400%;
   background-clip: text;
   color: transparent;
-  -webkit-animation: coming-soon-animation 3s infinite alternate;
-          animation: coming-soon-animation 3s infinite alternate;
+  -webkit-animation: coming-soon-animation 20s infinite alternate;
+          animation: coming-soon-animation 20s infinite alternate;
 }
 
 .landing__countdown {
@@ -68,6 +72,122 @@ section {
   width: 90vw;
   margin-top: 2rem;
   font-size: 2.5em;
+}
+
+.section__title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section--dark {
+  background-color: black;
+  color: white;
+}
+
+.section--light {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  min-height: 50vh !important;
+  height: 50vh;
+}
+
+.footer .section__title {
+  font-size: 2em;
+}
+
+.events__container {
+  max-width: 96vw;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container__card {
+  width: 48%;
+  height: 200px;
+  margin: 1% 1%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card__card-image {
+  overflow: hidden;
+}
+
+.card__title {
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.card-image__img {
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 350ms ease-in;
+  transition: -webkit-transform 350ms ease-in;
+  transition: transform 350ms ease-in;
+  transition: transform 350ms ease-in, -webkit-transform 350ms ease-in;
+}
+
+.card-image__img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0.4rem 1rem 1rem 1rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 96vw;
+  height: 90vh;
+  overflow: scroll;
+  background-color: white;
+  margin: auto auto;
+  -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9);
+}
+
+.modal--hidden {
+  display: none;
+}
+
+.modal__close-btn {
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal__title {
+  padding-top: 0.6rem;
+  font-size: 2em;
+  font-weight: bold;
+  font-variant-caps: small-caps;
+}
+
+.modal__modal-image {
+  margin-top: 0.4rem;
 }
 
 @-webkit-keyframes coming-soon-animation {

@@ -1,5 +1,4 @@
 let countDownDate = new Date("Feb 20, 2020 09:00:00").getTime();
-// let countDownDate = new Date("Dec 24, 2019 20:14:40").getTime();
 let countdownDiv = document.querySelector("div.landing__countdown");
 
 let timerUpdate = setInterval(function() {
@@ -19,3 +18,19 @@ let timerUpdate = setInterval(function() {
     countdownDiv.innerHTML = "EXPIRED";
   }
 }, 1000);
+
+let cards = document.querySelectorAll(".container__card");
+let card = cards[0];
+
+let openModal;
+
+card.addEventListener("click", e => {
+  openModal = document.querySelector(card.getAttribute("data-target"));
+  openModal.classList.remove("modal--hidden");
+});
+
+document.querySelectorAll(".modal__close-btn").forEach(item => {
+  item.addEventListener("click", e => {
+    openModal.classList.add("modal--hidden");
+  });
+});
