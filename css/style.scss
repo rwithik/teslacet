@@ -32,6 +32,10 @@ $clr-accent: black;
 
 // Styles begin here.
 
+@import "./partials/card_styles";
+@import "./partials/icons";
+@import "./partials/modal_styles";
+
 *,
 *:after,
 *:before {
@@ -124,100 +128,6 @@ a {
   }
 }
 
-// Events
-
-.events__container {
-  max-width: 96vw;
-  height: auto;
-  margin: 0 auto;
-  // background-color: blueviolet;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.container__card {
-  width: 48%;
-  height: auto;
-  margin: 1% 1%;
-  // background-color: whitesmoke;
-  background-color: $clr-accent;
-  color: $clr-primary;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 0 10px 0 rgba(black, 0.7);
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: 0 0 20px 0 rgba(black, 0.5);
-  }
-}
-
-.card__card-image {
-  overflow: hidden;
-}
-
-.card__title {
-  text-align: center;
-  padding: 0.2rem;
-  font-variant-caps: small-caps;
-  border-top: 1px dotted $clr-primary;
-}
-
-.card-image__img {
-  width: 100%;
-  transform: scale(1);
-  transition: transform 250ms ease-in;
-
-  // Todo: Re-enable when we get the real images.
-  // @at-root &:hover {
-  //   transform: scale(1.1);
-  // }
-}
-
-// Modals
-
-.modal {
-  // Fix: better way?
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 0.4rem 1rem 1rem 1rem;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  width: 96vw;
-  height: 90vh;
-  overflow: scroll;
-  background-color: $clr-primary;
-  margin: auto auto;
-  border-radius: 5px;
-  box-shadow: 0 0 0 100vw rgba(black, 0.9);
-
-  @at-root &--hidden {
-    display: none;
-  }
-
-  @at-root &__close-btn {
-    font-size: 1em;
-    font-weight: bold;
-    display: inline-block;
-    align-self: flex-end;
-    cursor: pointer;
-  }
-
-  @at-root &__title {
-    padding-top: 0.6rem;
-    font-size: 2em;
-    font-weight: bold;
-    font-variant-caps: small-caps;
-  }
-  @at-root &__modal-image {
-    margin-top: 0.4rem;
-  }
-}
-
 // Keyframe animations
 
 // Todo: Check with Sudhi before deploy.
@@ -230,12 +140,7 @@ a {
   }
 }
 
-.social {
-  background-color: yellow;
-}
-
 .social__icon {
-  display: inline-block;
   opacity: 0.2;
   cursor: pointer;
 
@@ -246,42 +151,11 @@ a {
   }
 }
 
-// css.gg
-
-// .gg-instagram {
-//   box-sizing: border-box;
-//   position: relative;
-//   display: block;
-//   transform: scale(var(--ggs, 1));
-//   border: 2px solid transparent;
-//   box-shadow: 0 0 0 2px;
-//   border-radius: 4px;
-//   width: 20px;
-//   height: 20px;
-// }
-// .gg-instagram::after,
-// .gg-instagram::before {
-//   content: "";
-//   display: block;
-//   box-sizing: border-box;
-//   position: absolute;
-// }
-// .gg-instagram::after {
-//   border: 2px solid;
-//   left: 3px;
-//   width: 10px;
-//   height: 10px;
-//   border-radius: 100%;
-//   top: 3px;
-// }
-// .gg-instagram::before {
-//   border-radius: 3px;
-//   width: 2px;
-//   height: 2px;
-//   background: currentColor;
-//   right: 1px;
-//   top: 1px;
-// }
+.social__icon--fb,
+.social__icon--ig {
+  display: inline-block;
+  padding: 1rem;
+}
 
 // Media Query Shtuff
 
@@ -317,6 +191,7 @@ a {
 
   .about-eee__content {
     // Fix: this ;_;
+    display: block;
     text-align: right;
   }
 
@@ -331,7 +206,7 @@ a {
   }
 
   .footer {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 25%;
+    padding-right: 25%;
   }
 }

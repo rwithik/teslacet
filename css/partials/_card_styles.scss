@@ -1,0 +1,49 @@
+.events__container {
+  max-width: 96vw;
+  height: auto;
+  margin: 0 auto;
+  // background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__card {
+  width: 48%;
+  height: auto;
+  margin: 1% 1%;
+  // background-color: whitesmoke;
+  background-color: lighten($clr-accent, 5%);
+  color: $clr-primary;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(black, 0.7);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(black, 0.5);
+  }
+}
+
+.card__card-image {
+  overflow: hidden;
+}
+
+.card__title {
+  text-align: center;
+  padding: 0.2rem;
+  font-variant-caps: small-caps;
+  border-top: 1px dotted rgba($clr-primary, 0.4);
+}
+
+.card-image__img {
+  width: 100%;
+  transform: scale(1);
+  transition: transform 250ms ease-in;
+
+  // Todo: Re-enable when we get the real images.
+  // @at-root &:hover {
+  //   transform: scale(1.1);
+  // }
+}
