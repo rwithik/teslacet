@@ -147,6 +147,12 @@ a {
   line-height: 1.5em;
 }
 
+.about-eee,
+.about-tesla {
+  min-height: fit-content;
+  padding: 10vh 1rem;
+}
+
 .footer {
   min-height: 30vh;
   height: 30vh;
@@ -203,6 +209,7 @@ a {
 
   .about-tesla,
   .about-eee {
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
