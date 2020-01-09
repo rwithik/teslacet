@@ -209,7 +209,8 @@ a {
 
   .about-tesla,
   .about-eee {
-    height: 100vh;
+    min-height: fit-content;
+    padding: 15vh 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -388,7 +388,10 @@ a {
   }
   .about-tesla,
   .about-eee {
-    height: 100vh;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 15vh 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
