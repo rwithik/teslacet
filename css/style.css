@@ -46,7 +46,7 @@
   width: 48%;
   height: auto;
   margin: 1% 1%;
-  background-color: #1e1b2f;
+  background-color: #29253f;
   color: #fffefa;
   border-radius: 5px;
   overflow: hidden;
@@ -105,7 +105,7 @@
 
 .gg-facebook::before {
   content: "";
-  background-color: #fffefa;
+  background-color: #14121f;
   z-index: 1;
   border-radius: 4px;
 }
@@ -113,9 +113,9 @@
 .gg-facebook::after {
   content: "f";
   z-index: 2;
-  color: #14121f;
+  color: #fffefa;
   font-size: 20px;
-  font-variant: bold;
+  font-weight: 600;
 }
 
 .gg-instagram {
@@ -169,12 +169,12 @@
           flex-direction: column;
   width: 96vw;
   height: 90vh;
-  overflow: scroll;
+  overflow: auto;
   background-color: #fffefa;
   margin: auto auto;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
 
 .modal--hidden {
@@ -190,6 +190,10 @@
   cursor: pointer;
 }
 
+.modal__close-btn:hover {
+  color: #fdac00;
+}
+
 .modal__title {
   padding-top: 0.6rem;
   font-size: 2em;
@@ -199,6 +203,18 @@
 
 .modal__modal-image {
   margin-top: 0.4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 450px) {
+  .modal {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 *,
@@ -221,6 +237,7 @@ section {
 
 img {
   width: 100%;
+  max-height: 100%;
 }
 
 a {
@@ -269,6 +286,11 @@ a {
   width: 90vw;
   margin-top: 2rem;
   font-size: 2.5em;
+}
+
+.landing__logo {
+  height: 40vh;
+  width: 40vh;
 }
 
 .section__title {

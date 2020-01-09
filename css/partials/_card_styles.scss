@@ -2,7 +2,6 @@
   max-width: 96vw;
   height: auto;
   margin: 0 auto;
-  // background-color: blueviolet;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -13,8 +12,7 @@
   width: 48%;
   height: auto;
   margin: 1% 1%;
-  // background-color: whitesmoke;
-  background-color: lighten($clr-accent, 5%);
+  background-color: lighten($clr-accent, 10%);
   color: $clr-primary;
   border-radius: 5px;
   overflow: hidden;

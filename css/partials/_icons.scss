@@ -1,10 +1,9 @@
 // css.gg
 
 .gg-facebook {
-  // Push this to css.gg
+  // Todo: Push this to css.gg
   position: relative;
   display: block;
-  // border: 2px solid transparent;
   box-shadow: 0 0 0 2px;
   border-radius: 4px;
   width: 20px;
@@ -14,8 +13,6 @@
   &::before {
     display: block;
     position: absolute;
-    // width: 22px;
-    // height: 20px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -26,7 +23,7 @@
 
   &::before {
     content: "";
-    background-color: $clr-primary;
+    background-color: $clr-accent;
     z-index: 1;
     border-radius: 4px;
   }
@@ -34,9 +31,9 @@
   &::after {
     content: "f";
     z-index: 2;
-    color: $clr-accent;
+    color: $clr-primary;
     font-size: 20px;
-    font-variant: bold;
+    font-weight: 600;
   }
 }
 

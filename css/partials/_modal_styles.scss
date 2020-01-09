@@ -9,11 +9,11 @@
   flex-direction: column;
   width: 96vw;
   height: 90vh;
-  overflow: scroll;
+  overflow: auto;
   background-color: $clr-primary;
   margin: auto auto;
   border-radius: 5px;
-  box-shadow: 0 0 0 100vw rgba(black, 0.9);
+  box-shadow: 0 0 0 100vmax rgba(black, 0.5);
 
   @at-root &--hidden {
     display: none;
@@ -25,6 +25,9 @@
     display: inline-block;
     align-self: flex-end;
     cursor: pointer;
+    &:hover {
+      color: $clr-secondary;
+    }
   }
 
   @at-root &__title {
@@ -35,5 +38,13 @@
   }
   @at-root &__modal-image {
     margin-top: 0.4rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .modal {
+    height: fit-content;
   }
 }
