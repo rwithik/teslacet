@@ -7,11 +7,22 @@
 }
 
 @font-face {
-  font-family: "Courgette";
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Courgette Regular"), local("Courgette-Regular"), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoP.ttf) format("truetype");
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 .events__container {
@@ -35,8 +46,8 @@
   width: 48%;
   height: auto;
   margin: 1% 1%;
-  background-color: #0d0d0d;
-  color: white;
+  background-color: #1e1b2f;
+  color: #fffefa;
   border-radius: 5px;
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
@@ -57,7 +68,7 @@
   text-align: center;
   padding: 0.2rem;
   font-variant-caps: small-caps;
-  border-top: 1px dotted rgba(255, 255, 255, 0.4);
+  border-top: 1px dotted rgba(255, 254, 250, 0.4);
 }
 
 .card-image__img {
@@ -94,7 +105,7 @@
 
 .gg-facebook::before {
   content: "";
-  background-color: white;
+  background-color: #fffefa;
   z-index: 1;
   border-radius: 4px;
 }
@@ -102,7 +113,7 @@
 .gg-facebook::after {
   content: "f";
   z-index: 2;
-  color: black;
+  color: #14121f;
   font-size: 20px;
   font-variant: bold;
 }
@@ -159,7 +170,7 @@
   width: 96vw;
   height: 90vh;
   overflow: scroll;
-  background-color: white;
+  background-color: #fffefa;
   margin: auto auto;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.9);
@@ -200,7 +211,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section {
@@ -217,9 +228,14 @@ a {
   color: currentColor;
 }
 
+.section__title,
+.card__title {
+  font-family: "Montserrat", sans-serif;
+}
+
 .landing {
-  background-color: black;
-  color: white;
+  background-color: #14121f;
+  color: #fffefa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,9 +253,9 @@ a {
 
 .landing__hero-text {
   font-size: 3em;
-  font-family: "Courgette", cursive;
+  font-family: "Montserrat";
   text-align: center;
-  background-image: linear-gradient(45deg, red, blue, orange, red, blue);
+  background-image: linear-gradient(45deg, #fdac00, #ffb820);
   background-size: 600%;
   background-clip: text;
   color: transparent;
@@ -262,13 +278,18 @@ a {
 }
 
 .section--dark {
-  background-color: black;
-  color: white;
+  background-color: #14121f;
+  color: #fffefa;
 }
 
 .section--light {
-  background-color: white;
-  color: black;
+  background-color: #fffefa;
+  color: #14121f;
+}
+
+.about-eee__content,
+.about-tesla__content {
+  line-height: 1.5em;
 }
 
 .footer {
