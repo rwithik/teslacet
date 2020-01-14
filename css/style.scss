@@ -4,81 +4,13 @@
 
 // $clr-primary: hsl(0, 47.2%, 85.9%);
 // $clr-accent: hsl(240, 56.5%, 9%);
-
-$clr-primary: #fffefa;
-$clr-accent: #14121f;
-$clr-secondary: #fdac00;
-$clr-secondary-light: #ffb820;
-
-// Fonts
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"),
-    url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf)
-      format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Lato Regular"), local("Lato-Regular"),
-    url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXjeu.woff2)
-      format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Lato Regular"), local("Lato-Regular"),
-    url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2)
-      format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-
 // Styles begin here.
 
+@import "./partials/basic";
+@import "./partials/variables";
 @import "./partials/card_styles";
 @import "./partials/icons";
 @import "./partials/modal_styles";
-
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
-section {
-  padding: 0.7rem;
-  min-height: 100vh;
-}
-
-img {
-  width: 100%;
-  max-height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-}
 
 // Classes
 
@@ -97,7 +29,8 @@ a {
   align-items: center;
 
   @at-root &__hero-text {
-    font-size: 3em;
+    font-size: 2.5em;
+    display: none;
     font-family: "Montserrat";
     text-align: center;
     // Fix: Nope :/
@@ -118,7 +51,7 @@ a {
     height: 1.05em;
     width: 90vw;
     margin-top: 2rem;
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
   @at-root &__logo {
@@ -184,8 +117,20 @@ a {
   }
 }
 
+.social {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.people__email,
+.people__mobile {
+  padding: 0.1rem;
+}
+
+.people__email,
 .social__icon {
-  opacity: 0.2;
+  opacity: 0.7;
   cursor: pointer;
 
   &:hover,
@@ -195,7 +140,12 @@ a {
   }
 }
 
+.social__icon {
+  flex-basis: 30%;
+}
+
 .social__icon--fb,
+.social__icon--ig,
 .social__icon--ig {
   display: inline-block;
   padding: 1rem;
@@ -204,10 +154,6 @@ a {
 // Media Query Shtuff
 
 @media only screen and (min-width: 450px) {
-  .container__card {
-    width: 20%;
-  }
-
   .about-tesla,
   .about-eee {
     min-height: fit-content;
@@ -257,7 +203,8 @@ a {
   }
 }
 
-.landing {
+.landing,
+.footer {
   background-image: radial-gradient(
       circle at 11% 62%,
       rgba(205, 205, 205, 0.04) 0%,

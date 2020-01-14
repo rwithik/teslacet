@@ -1,6 +1,6 @@
 // Countdown thingy
 
-// let countDownDate = new Date("Feb 20, 2020 09:00:00").getTime();
+// let countDownDate = new Date("Feb 15, 2020 09:00:00").getTime();
 // let countdownDiv = document.querySelector("div.landing__countdown");
 
 // let timerUpdate = setInterval(function() {
@@ -21,15 +21,17 @@
 //   }
 // }, 1000);
 
-let cards = document.querySelectorAll(".container__card");
+let cards = document.querySelectorAll(".container__card[data-target]");
 // let card = cards[0];
 
 let openModal;
 
 cards.forEach(card => {
   card.addEventListener("click", e => {
+    console.log(card.getAttribute("data-target"));
     openModal = document.querySelector(card.getAttribute("data-target"));
     openModal.classList.remove("modal--hidden");
+    console.log("open");
   });
 });
 
@@ -41,11 +43,10 @@ document.querySelectorAll(".modal__close-btn").forEach(item => {
 
 let workshopDate = new Date("Jan 14, 2020 06:00:00").getTime();
 const now = new Date().getTime();
-if (now >= workshopDate) {
-  const cards2 = document.querySelectorAll(".container__card:nth-of-type(1)");
-  console.log("Workshops Open");
+if (now >= workshopDate || true) {
+  const cards2 = document.querySelectorAll(".container__card[href]");
   cards2.forEach(card => {
-    card.removeEventListener("click");
+    // card.removeEventListener("click");
     card.addEventListener("click", () => {
       window.location.href = card.getAttribute("href");
     });

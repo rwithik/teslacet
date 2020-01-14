@@ -1,0 +1,21 @@
+@import "./partials/basic";
+@import "./partials/variables";
+@import "./partials/card_styles";
+@import "./partials/modal_styles";
+
+.ws-landing {
+  background-color: $clr-accent;
+}
+
+.ws__title {
+  // display: inline-block;
+  // width: auto;
+  // margin: 0 auto;
+  font-variant-caps: small-caps;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 2em;
+  color: $clr-primary;
+  padding: 1.5rem 0;
+}

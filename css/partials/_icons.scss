@@ -69,3 +69,30 @@
     top: 1px;
   }
 }
+
+.gg-mail,
+.gg-mail::after {
+  display: block;
+  box-sizing: border-box;
+  height: 22px;
+  border: 2px solid;
+}
+.gg-mail {
+  margin-left: 1rem;
+
+  overflow: hidden;
+  // transform: scale(2);
+  position: relative;
+  width: 27px;
+  border-radius: 2px;
+}
+.gg-mail::after {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  width: 24px;
+  transform: rotate(-45deg);
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}

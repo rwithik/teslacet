@@ -1,3 +1,83 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  padding: 0.7rem;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.copyright {
+  min-height: 1.2rem;
+  background-color: #14121f;
+  color: #fffefa;
+  text-align: center;
+}
+
+.gg-heart,
+.gg-heart::after {
+  border: 2px solid;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  width: 10px;
+  height: 8px;
+  border-bottom: 0;
+}
+
+.gg-heart {
+  margin: 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-transform: translate(calc(-10px / 2 * var(--ggs, 1)), calc(-6px / 2 * var(--ggs, 1))) rotate(-45deg) scale(var(--ggs, 1));
+          transform: translate(calc(-10px / 2 * var(--ggs, 1)), calc(-6px / 2 * var(--ggs, 1))) rotate(-45deg) scale(var(--ggs, 1));
+  display: inline-block;
+}
+
+.gg-heart::after,
+.gg-heart::before {
+  content: "";
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+}
+
+.gg-heart::after {
+  right: -9px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 5px;
+}
+
+.gg-heart::before {
+  width: 11px;
+  height: 11px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  left: -2px;
+  top: 3px;
+}
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -81,6 +161,12 @@
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
+@media only screen and (min-width: 450px) {
+  .container__card {
+    width: 20%;
+  }
+}
+
 .gg-facebook {
   position: relative;
   display: block;
@@ -153,6 +239,35 @@
   top: 1px;
 }
 
+.gg-mail,
+.gg-mail::after {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 22px;
+  border: 2px solid;
+}
+
+.gg-mail {
+  margin-left: 1rem;
+  overflow: hidden;
+  position: relative;
+  width: 27px;
+  border-radius: 2px;
+}
+
+.gg-mail::after {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  width: 24px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -168,7 +283,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 96vw;
-  height: 90vh;
+  max-height: 80vh;
   overflow: auto;
   background-color: #fffefa;
   margin: auto auto;
@@ -195,7 +310,7 @@
 }
 
 .modal__title {
-  padding-top: 0.6rem;
+  padding: 0.6rem 0 0.6rem;
   font-size: 2em;
   font-weight: bold;
   font-variant-caps: small-caps;
@@ -209,40 +324,18 @@
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 450px) {
+.modal__modal-content {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 450px) {
   .modal {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    min-height: 90vh;
+    max-width: 70vw;
   }
-}
-
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
-section {
-  padding: 0.7rem;
-  min-height: 100vh;
-}
-
-img {
-  width: 100%;
-  max-height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
+  .modal__modal-image {
+    width: 50%;
+  }
 }
 
 .section__title,
@@ -269,7 +362,8 @@ a {
 }
 
 .landing__hero-text {
-  font-size: 3em;
+  font-size: 2.5em;
+  display: none;
   font-family: "Montserrat";
   text-align: center;
   color: #14121f;
@@ -280,7 +374,7 @@ a {
   height: 1.05em;
   width: 90vw;
   margin-top: 2rem;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .landing__logo {
@@ -362,25 +456,49 @@ a {
   }
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.people__email,
+.people__mobile {
+  padding: 0.1rem;
+}
+
+.people__email,
 .social__icon {
-  opacity: 0.2;
+  opacity: 0.7;
   cursor: pointer;
 }
 
-.social__icon:hover, .social__icon:focus, .social__icon:focus-within {
+.people__email:hover, .people__email:focus, .people__email:focus-within,
+.social__icon:hover,
+.social__icon:focus,
+.social__icon:focus-within {
   opacity: 1;
 }
 
+.social__icon {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
 .social__icon--fb,
+.social__icon--ig,
 .social__icon--ig {
   display: inline-block;
   padding: 1rem;
 }
 
 @media only screen and (min-width: 450px) {
-  .container__card {
-    width: 20%;
-  }
   .about-tesla,
   .about-eee {
     min-height: -webkit-fit-content;
@@ -433,7 +551,8 @@ a {
   }
 }
 
-.landing {
+.landing,
+.footer {
   background-image: radial-gradient(circle at 11% 62%, rgba(205, 205, 205, 0.04) 0%, rgba(205, 205, 205, 0.04) 50%, rgba(149, 149, 149, 0.04) 50%, rgba(149, 149, 149, 0.04) 100%), radial-gradient(circle at 78% 10%, rgba(49, 49, 49, 0.04) 0%, rgba(49, 49, 49, 0.04) 50%, rgba(254, 254, 254, 0.04) 50%, rgba(254, 254, 254, 0.04) 100%), radial-gradient(circle at 92% 43%, rgba(34, 34, 34, 0.04) 0%, rgba(34, 34, 34, 0.04) 50%, rgba(206, 206, 206, 0.04) 50%, rgba(206, 206, 206, 0.04) 100%), linear-gradient(329deg, #f14d21, #dae33d);
   background-attachment: fixed;
 }
