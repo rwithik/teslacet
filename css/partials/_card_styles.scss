@@ -17,15 +17,19 @@
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px 0 rgba(black, 0.7);
+  transition: transform 150ms cubic-bezier(0.5, 0, 0.5, 1),
+    box-shadow 150ms cubic-bezier(0.5, 0, 0.5, 1);
   cursor: pointer;
 
   &:hover {
+    transform: translateY(-5px);
     box-shadow: 0 0 20px 0 rgba(black, 0.5);
   }
 }
 
 .card__card-image {
   overflow: hidden;
+  padding: 1.5rem;
 }
 
 .card__title {

@@ -151,6 +151,13 @@
   padding: 1rem;
 }
 
+// Overrides
+
+.container__card {
+  background-color: darken($clr-primary, 5%);
+  color: $clr-accent;
+}
+
 // Media Query Shtuff
 
 @media only screen and (min-width: 450px) {
