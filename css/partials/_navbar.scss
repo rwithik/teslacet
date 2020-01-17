@@ -14,6 +14,12 @@
   @at-root &__logo {
     height: 100%;
     width: auto;
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
   }
 
   @at-root &__list {
