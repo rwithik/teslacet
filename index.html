@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Todo: Change to minified file before deploy -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Tesla '20</title>
   </head>
   <body>
-    <section class="landing section--light">
+    <nav class="nav">
+      <a href="./index.html" class="nav__logo"
+        ><img src="./images/logoonly.png" alt=""
+      /></a>
+      <button class="hamburger-toggle">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home">Home</a></li>
+        <li class="nav__item"><a href="#events">Events</a></li>
+        <li class="nav__item"><a href="./workshops.html">Workshops</a></li>
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--  -->
+    <!--  -->
+    <section class="landing section--light" id="home">
       <div class="landing__logo">
         <img src="./images/logo20.png" alt="logo" />
       </div>
@@ -21,7 +38,9 @@
         February 15<sup>th</sup> and 16<sup>th</sup>
       </div>
     </section>
-    <section class="events section--light">
+    <!--  -->
+    <!--  -->
+    <section class="events section--light" id="events">
       <h1 class="section__title">Events</h1>
       <div class="events__container">
         <div class="container__card" href="./workshops.html">
@@ -66,7 +85,9 @@
         </div>
       </div>
     </section>
-    <section class="about-tesla section--dark">
+    <!--  -->
+    <!--  -->
+    <section class="about-tesla section--dark" id="about">
       <h1 class="about-tesla section__title">About Tesla</h1>
       <div class="about-tesla__content">
         <p>
@@ -95,7 +116,7 @@
         </p>
       </div>
     </section>
-    <section class="footer section--light">
+    <section class="footer section--light" id="contact">
       <h1 class="section__title">Contact Us</h1>
       <div class="footer__content">
         <div class="contact__people">

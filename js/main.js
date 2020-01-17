@@ -52,3 +52,23 @@ if (now >= workshopDate || true) {
     });
   });
 }
+
+// Navbar stuff
+
+const navButton = document.querySelector(".hamburger-toggle");
+const navList = document.querySelector(".nav__list");
+const hamburger = document.querySelector(".hamburger");
+
+navButton.addEventListener("click", () => {
+  navList.classList.toggle("nav__list--open");
+  hamburger.classList.toggle("hamburger--close");
+});
+
+const navItems = document.querySelectorAll(".nav__item");
+
+navItems.forEach(item => {
+  item.addEventListener("click", () => {
+    navList.classList.remove("nav__list--open");
+    hamburger.classList.remove("hamburger--close");
+  });
+});

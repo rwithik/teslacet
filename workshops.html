@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Todo: Change to minified file before deploy -->
-    <link rel="stylesheet" href="./css/workshops.css" />
+    <link rel="stylesheet" href="./dist/css/workshops.min.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Workshops</title>
   </head>
   <body>
+    <nav class="nav">
+      <a href="./index.html" class="nav__logo"
+        ><img src="./images/logoonly.png" alt=""
+      /></a>
+      <button class="hamburger-toggle">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="./index.html#home">Home</a></li>
+        <li class="nav__item"><a href="./index.html#events">Events</a></li>
+        <li class="nav__item"><a href="./workshops.html">Workshops</a></li>
+        <li class="nav__item"><a href="./index.html#about">About</a></li>
+        <li class="nav__item"><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
     <section class="ws-landing">
       <h2 class="ws__title">
         Tesla 20 Workshops
