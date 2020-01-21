@@ -29,7 +29,8 @@
 
 .card__card-image {
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 2.5rem;
+  filter: invert(1);
 }
 
 .card__title {

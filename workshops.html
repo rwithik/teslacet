@@ -12,17 +12,17 @@
   <body>
     <nav class="nav">
       <a href="./index.html" class="nav__logo"
-        ><img src="./images/logoonly.png" alt=""
+        ><img src="./images/logotext2.png" alt="" style="width: 200px"
       /></a>
       <button class="hamburger-toggle">
         <span class="hamburger"></span>
       </button>
       <ul class="nav__list">
-        <li class="nav__item"><a href="./index.html#home">Home</a></li>
-        <li class="nav__item"><a href="./index.html#events">Events</a></li>
+        <li class="nav__item"><a href="#home">Home</a></li>
+        <li class="nav__item"><a href="#events">Events</a></li>
         <li class="nav__item"><a href="./workshops.html">Workshops</a></li>
-        <li class="nav__item"><a href="./index.html#about">About</a></li>
-        <li class="nav__item"><a href="./index.html#contact">Contact</a></li>
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section class="ws-landing">
@@ -30,111 +30,47 @@
         Tesla 20 Workshops
       </h2>
       <div class="events__container">
-        <div class="container__card" data-target="#arduino-modal">
+        <div class="container__card">
           <div class="card__card-image">
             <img src="./images/logo.png" alt="" class="card-image__img" />
           </div>
-          <div class="card__title">Arduino</div>
+          <div class="card__title">Home Automation</div>
+          <a class="card__register">Register</a>
         </div>
         <div class="container__card">
           <div class="card__card-image">
             <img src="./images/logo.png" alt="" class="card-image__img" />
           </div>
-          <div class="card__title">Coming Soon!</div>
+          <div class="card__title">Photo-voltaic Systems by PACELAB&trade;</div>
+          <a class="card__register">Register</a>
         </div>
         <div class="container__card">
           <div class="card__card-image">
             <img src="./images/logo.png" alt="" class="card-image__img" />
           </div>
-          <div class="card__title">Coming Soon!</div>
+          <div class="card__title">Machine Learning</div>
+          <a class="card__register">Register</a>
         </div>
         <div class="container__card">
           <div class="card__card-image">
-            <img src="./images/logo.png" alt="" class="card-image__img" />
+            <img src="./images/qc_poster.jpeg" alt="" class="card-image__img" />
           </div>
-          <div class="card__title">Coming Soon!</div>
+          <div class="card__title">Quantum Computing using Python</div>
+          <a class="card__register">Jan 25<sup>th</sup></a>
         </div>
         <div class="container__card">
           <div class="card__card-image">
-            <img src="./images/logo.png" alt="" class="card-image__img" />
+            <img
+              src="./images/gcb_poster.jpeg"
+              alt=""
+              class="card-image__img"
+            />
           </div>
-          <div class="card__title">Coming Soon!</div>
-        </div>
-        <div class="container__card">
-          <div class="card__card-image">
-            <img src="./images/logo.png" alt="" class="card-image__img" />
-          </div>
-          <div class="card__title">Coming Soon!</div>
+          <div class="card__title">Gesture Controlled Bot</div>
+          <a class="card__register">Jan 25<sup>th</sup></a>
         </div>
       </div>
     </section>
-    <div class="modal modal--hidden" id="arduino-modal">
-      <div class="modal__close-btn">[close]</div>
-      <div class="modal__modal-image">
-        <img src="./images/logo20.png" alt="" class="modal-image__img" />
-      </div>
-      <div class="modal__title" style="text-align: center;">
-        Arduino Workshop
-      </div>
-      <div class="modal__modal-content">
-        Want to head into a world of electronics and programming?? Still
-        confused where to begin from?? Why start low?? Can't you just begin by
-        making a robot which is controlled by your gestures?? <b>TESLA'20</b> is
-        hosting a <b>Workshop on Gesture controlled bot using Arduino</b> on
-        <b>
-          25th January
-        </b>
-        at College of Engineering, Trivandrum Arduino is an open-source
-        electronics platform based on easy-to-use hardware and software. Arduino
-        boards are able to read inputs - light on a sensor, a finger on a
-        button, or a Twitter message - and turn it into an output - activating a
-        motor, turning on an LED, publishing something online. You can tell your
-        board what to do by sending a set of instructions to the microcontroller
-        on the board. <br />
-        <b>Components provided:</b><br />
-        Arduino Uno with cable<br />
-        HC-05 Bluetooth Module<br />
-        L293D Motor-driver<br />
-        DC Motors(2)<br />
-        Potentiometer(1 kohm)<br />
-        Resistors - 1000 ohm(5 nos.)<br />
-        LEDs (10nos.)<br />
-        Switchbutton(1)<br />
-        Jumper wires - Male-Female(15), Male-Male(15),female -female(6)<br />
-        9V Battery(2)<br />
-        2-wheel Robot Chassis<br />
-        Wheels - 2<br />
-        Caster wheel<br />
-        Snapper with jack(1)<br />
-        Snapper without jack(1)<br />
-        Breadboard(1)<br />
-        <b>The topics that would be covered are:</b><br />
-        1. Introduction to arduino(With Blink Program)<br />
-        2. Pwm And analog(led brightness control with analogwrite,
-        potentiometer,<br />
-        3. Ultrasonic and ir sensor<br />
-        4. Motor control using l293d<br />
-        5. HC05 Module(Bluetooth gesture controlled bot)<br />
-        <br />
-        <b>
-          Team Members:5<br />
-          Per head Rs.600<br />
-          Total payment from a team :Rs.3000<br />
-          Venue: College of Engineering Trivandrum<br />
-          Date: 25th January 2020<br />
-          One laptop per team is necessary<br />
-        </b>
-        Contact:<br />
-        Devanand M: +91 95260 00308<br />
-        Thejas: +91 81291 59951<br />
-      </div>
-      <a
-        href="https://www.yepdesk.com/gesture-controlled-bot-using-arduino"
-        class="modal__register-btn"
-        >Register!</a
-      >
-      &nbsp;
-    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -80,12 +80,24 @@
 .about-eee__content,
 .about-tesla__content {
   line-height: 1.5em;
+  text-align: center;
 }
 
 .about-eee,
 .about-tesla {
   min-height: fit-content;
   padding: 10vh 1rem;
+}
+
+.about__team {
+  background-color: $clr-primary;
+  display: inline-block;
+  text-align: center;
+  // width: 7rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50vh;
+  color: $clr-accent;
 }
 
 .footer {
@@ -103,18 +115,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-// Keyframe animations
-
-// Todo: Check with Sudhi before deploy.
-@keyframes coming-soon-animation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
   }
 }
 
@@ -152,13 +152,6 @@
   padding: 1rem;
 }
 
-// Overrides
-
-.container__card {
-  background-color: darken($clr-primary, 5%);
-  color: $clr-accent;
-}
-
 // Media Query Shtuff
 
 @media only screen and (min-width: 450px) {
@@ -173,6 +166,7 @@
 
     @at-root &__content {
       flex-basis: 55%;
+      text-align: left;
     }
   }
 

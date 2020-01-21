@@ -1,0 +1,30 @@
+.events-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: $clr-accent;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: $clr-primary;
+}
+
+.event__image {
+  max-height: 4rem;
+}
+
+.event__img {
+  max-height: 100%;
+  filter: invert(1);
+}

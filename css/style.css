@@ -152,7 +152,9 @@ a {
 
 .card__card-image {
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 2.5rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .card__title {
@@ -387,6 +389,13 @@ a {
   width: auto;
 }
 
+.nav__logo img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .nav__list {
   list-style: none;
   display: -webkit-box;
@@ -549,6 +558,7 @@ a {
 .about-eee__content,
 .about-tesla__content {
   line-height: 1.5em;
+  text-align: center;
 }
 
 .about-eee,
@@ -557,6 +567,16 @@ a {
   min-height: -moz-fit-content;
   min-height: fit-content;
   padding: 10vh 1rem;
+}
+
+.about__team {
+  background-color: #fffefa;
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50vh;
+  color: #14121f;
 }
 
 .footer {
@@ -584,24 +604,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@-webkit-keyframes coming-soon-animation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-@keyframes coming-soon-animation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
 }
 
 .social {
@@ -646,11 +648,6 @@ a {
   padding: 1rem;
 }
 
-.container__card {
-  background-color: #fff9e1;
-  color: #14121f;
-}
-
 @media only screen and (min-width: 450px) {
   .about-tesla,
   .about-eee {
@@ -675,6 +672,7 @@ a {
   .about-eee__content {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
+    text-align: left;
   }
   .about-eee.section__title,
   .about-tesla.section__title {
