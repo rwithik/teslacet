@@ -543,6 +543,31 @@ a {
   width: 40vh;
 }
 
+.sponsors {
+  min-height: 50vh;
+}
+
+.sponsors__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.sponsors__item {
+  height: 20vh;
+  margin: 1rem;
+}
+
+.sponsors__item img {
+  max-height: 100%;
+}
+
 .section__title {
   font-size: 3em;
   text-align: center;

@@ -1,0 +1,16 @@
+@import "./partials/variables";
+@import "./partials/basic";
+@import "./partials/navbar";
+
+.sponsors__landing {
+  background-color: $clr-accent;
+  color: $clr-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__title {
+  margin-bottom: auto;
+}

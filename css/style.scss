@@ -61,6 +61,25 @@
   }
 }
 
+.sponsors {
+  min-height: 50vh;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // flex-wrap: wrap;
+  }
+
+  &__item {
+    height: 20vh;
+    img {
+      max-height: 100%;
+    }
+    margin: 1rem;
+  }
+}
+
 .section__title {
   font-size: 3em;
   text-align: center;
