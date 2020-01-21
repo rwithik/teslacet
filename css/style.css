@@ -561,6 +561,8 @@ a {
 
 .sponsors__item {
   height: 20vh;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
   margin: 1rem;
 }
 
@@ -728,6 +730,10 @@ a {
   .footer {
     padding-left: 25%;
     padding-right: 25%;
+  }
+  .sponsors__item {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
   }
 }
 

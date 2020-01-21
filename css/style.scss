@@ -73,6 +73,7 @@
 
   &__item {
     height: 20vh;
+    flex-basis: 28%;
     img {
       max-height: 100%;
     }
@@ -221,6 +222,10 @@
   .footer {
     padding-left: 25%;
     padding-right: 25%;
+  }
+
+  .sponsors__item {
+    flex-basis: 15%;
   }
 }
 
