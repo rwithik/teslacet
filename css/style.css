@@ -489,9 +489,13 @@ a {
 }
 
 @media only screen and (max-width: 450px) {
+  .nav__list {
+    height: 50vh;
+  }
   .nav__list--open {
     left: 0;
     width: 100vw;
+    height: 50vh;
   }
 }
 

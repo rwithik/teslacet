@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 *,
 *:after,
 *:before {
@@ -80,33 +107,6 @@ a {
   border-bottom: 2px solid;
   left: -2px;
   top: 3px;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 .nav {
@@ -244,47 +244,8 @@ a {
   }
 }
 
-.ws-landing {
+.team__landing {
   background-color: #14121f;
-  padding: 1rem;
-  padding-top: 10vh;
-}
-
-.ws__title {
-  font-variant-caps: small-caps;
-  letter-spacing: 1px;
-  font-family: "Montserrat";
-  text-align: center;
-  font-size: 2em;
-  color: #fffefa;
-  padding: 1.5rem 0;
-}
-
-.events__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container__card {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  margin: 1rem;
-  border-radius: 4px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 0 5px whitesmoke;
-          box-shadow: 0 0 5px whitesmoke;
   color: #fffefa;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,39 +260,77 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10vh;
 }
 
-.card__title {
-  font-size: 1.2rem;
-  padding: 1rem;
-  display: inline-block;
+.team__title {
+  margin-bottom: auto;
+}
+
+.team {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__item {
+  border-radius: 5px;
+  height: 20vh;
+  width: 25vw;
+  margin: 10px;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 0 5px rgba(255, 254, 250, 0.5);
+          box-shadow: 0 0 5px rgba(255, 254, 250, 0.5);
+  -webkit-transition: -webkit-box-shadow 150ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: -webkit-box-shadow 150ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: box-shadow 150ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: box-shadow 150ms cubic-bezier(0.5, 0, 0.5, 1), -webkit-box-shadow 150ms cubic-bezier(0.5, 0, 0.5, 1);
   position: relative;
-  text-align: center;
 }
 
-.card__title::after {
-  content: "";
+.team__item:hover {
+  -webkit-box-shadow: 0 0 15px rgba(255, 254, 250, 0.5);
+          box-shadow: 0 0 15px rgba(255, 254, 250, 0.5);
+}
+
+.team__post {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.team__name {
   position: absolute;
   bottom: 1rem;
-  height: 2px;
   left: 1rem;
-  right: 1rem;
-  background-color: #fffefa;
+  text-transform: uppercase;
+  color: #ffb820;
 }
 
-.card__register {
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #fffefa;
-  color: #14121f;
-  margin-bottom: 1rem;
+.team__mobile {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: rgba(255, 254, 250, 0.7);
 }
 
 @media only screen and (max-width: 450px) {
-  .container__card {
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
+  .team__item {
+    width: 90vw;
   }
 }
-/*# sourceMappingURL=workshops.css.map */
+/*# sourceMappingURL=team.css.map */
