@@ -70,6 +70,14 @@
   background-color: $clr-primary;
   color: $clr-accent;
   margin-bottom: 1rem;
+
+  &--disabled {
+    opacity: 0.5;
+  }
+
+  &:not(.card__register--disabled):hover {
+    filter: brightness(50%) sepia(1) hue-rotate(240deg);
+  }
 }
 
 @media only screen and (max-width: 450px) {

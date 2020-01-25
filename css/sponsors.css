@@ -193,10 +193,10 @@ a {
   border-radius: 2px;
   position: relative;
   display: block;
-  -webkit-transition: -webkit-transform 150ms cubic-bezier(0.5, 0, 0.5, 1);
-  transition: -webkit-transform 150ms cubic-bezier(0.5, 0, 0.5, 1);
-  transition: transform 150ms cubic-bezier(0.5, 0, 0.5, 1);
-  transition: transform 150ms cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 150ms cubic-bezier(0.5, 0, 0.5, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .hamburger::before, .hamburger::after {
