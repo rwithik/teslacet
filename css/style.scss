@@ -6,8 +6,8 @@
 // $clr-accent: hsl(240, 56.5%, 9%);
 // Styles begin here.
 
-@import "./partials/basic";
 @import "./partials/variables";
+@import "./partials/basic";
 @import "./partials/card_styles";
 @import "./partials/icons";
 @import "./partials/modal_styles";
@@ -80,22 +80,6 @@
     }
     margin: 1rem;
   }
-}
-
-.section__title {
-  font-size: 3em;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.section--dark {
-  background-color: $clr-accent;
-  color: $clr-primary;
-}
-
-.section--light {
-  background-color: $clr-primary;
-  color: $clr-accent;
 }
 
 .about-eee__content,

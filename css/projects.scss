@@ -1,0 +1,40 @@
+@import "./partials/variables";
+@import "./partials/basic";
+// @import "./partials/card_styles";
+// @import "./partials/modal_styles";
+@import "./partials/navbar";
+
+.projects-landing {
+  margin-top: 10vh;
+  min-height: 90vh;
+}
+
+.projects-container {
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.project {
+  width: 20vw;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid $clr-primary;
+  box-shadow: 0 0 5px rgba($clr-primary, 0.4);
+
+  &:hover {
+    box-shadow: 0 0 15px rgba($clr-primary, 0.4);
+  }
+}
+
+.section__subtext {
+  font-size: 1.5rem;
+  color: rgba($clr-primary, 0.7);
+  text-align: center;
+}
