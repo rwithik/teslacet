@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Tesla CET, 20. EEE department, CET. Department Fest. Electrical and Electronics."
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Tesla 20</title>
-  </head>
-  <body>
-    <nav class="nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Tesla CET, 20. EEE department, CET. Department Fest. Electrical and Electronics." />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Tesla 20</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- <nav class="nav">
       <a href="./index.html" class="nav__logo"
         ><img src="./images/logotext2.png" alt="" style="width: 200px"
       /></a>
@@ -33,203 +37,228 @@
         <li class="nav__item"><a href="#about">About</a></li>
         <li class="nav__item"><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-    <!--  -->
-    <!--  -->
-    <section class="landing section--light" id="home">
-      <div class="landing__logo">
-        <img src="./images/logo20.png" alt="logo" />
+    </nav> -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="./images/logotext2.png" alt="" style="width: 200px"
+      /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./images/logotext2.png" alt="" style="width: 200px"
+          /></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="landing__hero-text">
-        Coming Soon!
-      </div>
-      <div class="landing__countdown">
-        February 15<sup>th</sup> and 16<sup>th</sup>
-      </div>
-      <span class="landing__text">In Association With</span>
-      <div class="landing__sponsor">
-        <a href="http://www.choiceinternational.in/"
-          ><img src="./images/choice.jpeg" alt="" class="sponsor__img"
-        /></a>
-      </div>
-      <span class="landing__text">Co-Sponsored By</span>
-
-      <div style="display: flex;margin-top: .5rem;">
-        <div class="landing__sponsor" style="margin: 0;padding: 0;">
-          <a href="" style="margin: 0;padding: 0"
-            ><img
-              src="./images/eatn.jpg"
-              alt=""
-              class="sponsor__img"
-              style="margin: 0;padding: 0;max-height: 40px;"
-          /></a>
-        </div>
-        <div class="landing__sponsor" style="margin: 0;padding: 0">
-          <a href="" style="margin: 0;padding: 0"
-            ><img
-              src="./images/peacock.jpg"
-              alt=""
-              class="sponsor__img"
-              style="margin: 0;padding: 0;max-height: 40px;"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <!--  -->
-    <section class="sponsors section--dark">
-      <h1 class="section__title">Our Sponsors</h1>
-      <div class="sponsors__list">
-        <div class="sponsors__item">
-          <img src="./images/arc.png" alt="" class="sponsors__img" />
-        </div>
-        <div class="sponsors__item">
-          <img src="./images/helmetworld.jpg" alt="" class="sponsors__img" />
-        </div>
-        <div class="sponsors__item">
-          <img src="./images/ffc.jpeg" alt="" class="sponsors__img" />
-        </div>
-        <div class="sponsors__item">
-          <img src="./images/eduzone.jpeg" alt="" class="sponsors__img" />
-        </div>
-        <div class="sponsors__item">
-          <img src="./images/baba.jpeg" alt="" class="sponsors__img" />
-        </div>
-        <div class="sponsors__item">
-          <img src="./images/bbqnation.jpg" alt="" class="sponsors__img" />
-        </div>
-        <a href="https://thesouledstore.com">
-          <div class="sponsors__item">
-            <img src="./images/souledstore.png" alt="" class="sponsors__img" />
-          </div>
-        </a>
-      </div>
-    </section>
-    <!--  -->
-    <!--  -->
-    <section class="events section--light" id="events">
-      <h1 class="section__title">Events</h1>
-      <div class="events__container">
-        <div class="container__card" href="./workshops.html">
-          <div class="card__card-image">
-            <img src="./images/Workshops.png" alt="" class="card-image__img" />
-          </div>
-          <div class="card__title">Workshops</div>
-        </div>
-        <div class="container__card" href="./competitions.html">
-          <div class="card__card-image">
-            <img
-              src="./images/Competitions.png"
-              alt=""
-              class="card-image__img"
-            />
-          </div>
-          <div class="card__title">Competitions</div>
-        </div>
-        <div class="container__card" href="./projects.html">
-          <div class="card__card-image">
-            <img src="./images/Projects.png" alt="" class="card-image__img" />
-          </div>
-          <div class="card__title">Projects</div>
-        </div>
-        <div class="container__card" href="./talks.html">
-          <div class="card__card-image">
-            <img src="./images/Talks.png" alt="" class="card-image__img" />
-          </div>
-          <div class="card__title">Talks</div>
-        </div>
-        <div class="container__card" data-target="#coming-soon-modal">
-          <div class="card__card-image">
-            <img src="./images/Expo.png" alt="" class="card-image__img" />
-          </div>
-          <div class="card__title">Expo</div>
-        </div>
-        <div class="container__card" data-target="#coming-soon-modal">
-          <div class="card__card-image">
-            <img src="./images/mic.png" alt="" class="card-image__img" />
-          </div>
-          <div class="card__title">TESLA night</div>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <!--  -->
-    <section class="about-tesla section--dark" id="about">
-      <h1 class="about-tesla section__title">About Tesla</h1>
-      <div class="about-tesla__content">
-        <p>
-          Tesla is the annual technical extravaganza of the Electrical and
-          Electronics Department of College of Engineering, Trivandrum. Just
-          like its namesake. The fest has an abundance of innovation, creativity
-          and freedom. Boasting exciting competitions, mind boggling projects
-          and a multitude of expos, Tesla is a fest that has set its bar higher
-          every year. A collaborative effort put by the department. Its a vision
-          that has been passed down to the present by its predecessors. Thus
-          portraying a legacy brought out by ideas, innovation and hardwork.
-        </p>
-        <a href="./team.html" class="about__team">The TESLA 20 Team</a>
-      </div>
-    </section>
-    <section class="about-eee section--light">
-      <h1 class="about-eee section__title">About the Department</h1>
-      <div class="about-eee__content">
-        <p>
-          The Department of Electrical Engineering is one of the founding
-          departments of College of Engineering Trivandrum which started
-          functioning in 1939. Right from its inception, the department has been
-          rated very high in academic circles. It provides quality technical
-          education to young minds with a zeal to contribute to the advancement
-          of human knowledge and progress. We, the students, staff and faculty
-          at EE strive to take the global presence of CET to the next level.
-        </p>
-      </div>
-    </section>
-    <section class="footer section--light" id="contact">
-      <h1 class="section__title">Contact Us</h1>
-      <div class="footer__content">
-        <div class="contact__people">
-          <div class="people__mobile">
-            Georgin Jacob <br />
-            +91 8078210365
-          </div>
-          <div class="people__mobile">
-            Joseph Kurian <br />
-            +91 9048332239
-          </div>
-        </div>
-        <div class="social">
-          <div class="social__icon social__icon--fb">
-            <a
-              href="https://facebook.com/profile.php?id=156576864998370&ref=content_filter"
-            >
-              <i class="gg-facebook"></i>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
             </a>
-          </div>
-          <div class="social__icon social__icon--fb">
-            <a href="https://instagram.com/teslacet?igshid=1ago43cvtc224">
-              <i class="gg-instagram"></i>
-            </a>
-          </div>
-          <div class="social__icon social__icon--mail">
-            <a href="mailto:teslacet0@gmail.com">
-              <i class="gg-mail"></i>
-            </a>
-          </div>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+  <!--  -->
+  <!--  -->
+  <section class="landing section--light" id="home">
+    <div class="landing__logo">
+      <img src="./images/logo20.png" alt="logo" />
+    </div>
+    <div class="landing__hero-text">
+      Coming Soon!
+    </div>
+    <div class="landing__countdown">
+      February 15<sup>th</sup> and 16<sup>th</sup>
+    </div>
+    <span class="landing__text">In Association With</span>
+    <div class="landing__sponsor">
+      <a href="http://www.choiceinternational.in/"><img src="./images/choice.jpeg" alt="" class="sponsor__img" /></a>
+    </div>
+    <span class="landing__text">Co-Sponsored By</span>
+
+    <div style="display: flex;margin-top: .5rem;">
+      <div class="landing__sponsor" style="margin: 0;padding: 0;">
+        <a href="" style="margin: 0;padding: 0"><img src="./images/eatn.jpg" alt="" class="sponsor__img"
+            style="margin: 0;padding: 0;max-height: 40px;" /></a>
+      </div>
+      <div class="landing__sponsor" style="margin: 0;padding: 0">
+        <a href="" style="margin: 0;padding: 0"><img src="./images/peacock.jpg" alt="" class="sponsor__img"
+            style="margin: 0;padding: 0;max-height: 40px;" /></a>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <!--  -->
+  <section class="sponsors section--dark">
+    <h1 class="section__title">Our Sponsors</h1>
+    <div class="sponsors__list">
+      <div class="sponsors__item">
+        <img src="./images/arc.png" alt="" class="sponsors__img" />
+      </div>
+      <div class="sponsors__item">
+        <img src="./images/helmetworld.jpg" alt="" class="sponsors__img" />
+      </div>
+      <div class="sponsors__item">
+        <img src="./images/ffc.jpeg" alt="" class="sponsors__img" />
+      </div>
+      <div class="sponsors__item">
+        <img src="./images/eduzone.jpeg" alt="" class="sponsors__img" />
+      </div>
+      <div class="sponsors__item">
+        <img src="./images/baba.jpeg" alt="" class="sponsors__img" />
+      </div>
+      <div class="sponsors__item">
+        <img src="./images/bbqnation.jpg" alt="" class="sponsors__img" />
+      </div>
+      <a href="https://thesouledstore.com">
+        <div class="sponsors__item">
+          <img src="./images/souledstore.png" alt="" class="sponsors__img" />
+        </div>
+      </a>
+    </div>
+  </section>
+  <!--  -->
+  <!--  -->
+  <section class="events section--light" id="events">
+    <h1 class="section__title">Events</h1>
+    <div class="events__container">
+      <div class="container__card" href="./workshops.html">
+        <div class="card__card-image">
+          <img src="./images/Workshops.png" alt="" class="card-image__img" />
+        </div>
+        <div class="card__title">Workshops</div>
+      </div>
+      <div class="container__card" href="./competitions.html">
+        <div class="card__card-image">
+          <img src="./images/Competitions.png" alt="" class="card-image__img" />
+        </div>
+        <div class="card__title">Competitions</div>
+      </div>
+      <div class="container__card" href="./projects.html">
+        <div class="card__card-image">
+          <img src="./images/Projects.png" alt="" class="card-image__img" />
+        </div>
+        <div class="card__title">Projects</div>
+      </div>
+      <div class="container__card" href="./talks.html">
+        <div class="card__card-image">
+          <img src="./images/Talks.png" alt="" class="card-image__img" />
+        </div>
+        <div class="card__title">Talks</div>
+      </div>
+      <div class="container__card" data-target="#coming-soon-modal">
+        <div class="card__card-image">
+          <img src="./images/Expo.png" alt="" class="card-image__img" />
+        </div>
+        <div class="card__title">Expo</div>
+      </div>
+      <div class="container__card" data-target="#coming-soon-modal">
+        <div class="card__card-image">
+          <img src="./images/mic.png" alt="" class="card-image__img" />
+        </div>
+        <div class="card__title">TESLA night</div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <!--  -->
+  <section class="about-tesla section--dark" id="about">
+    <h1 class="about-tesla section__title">About Tesla</h1>
+    <div class="about-tesla__content">
+      <p>
+        Tesla is the annual technical extravaganza of the Electrical and
+        Electronics Department of College of Engineering, Trivandrum. Just
+        like its namesake. The fest has an abundance of innovation, creativity
+        and freedom. Boasting exciting competitions, mind boggling projects
+        and a multitude of expos, Tesla is a fest that has set its bar higher
+        every year. A collaborative effort put by the department. Its a vision
+        that has been passed down to the present by its predecessors. Thus
+        portraying a legacy brought out by ideas, innovation and hardwork.
+      </p>
+      <a href="./team.html" class="about__team">The TESLA 20 Team</a>
+    </div>
+  </section>
+  <section class="about-eee section--light">
+    <h1 class="about-eee section__title">About the Department</h1>
+    <div class="about-eee__content">
+      <p>
+        The Department of Electrical Engineering is one of the founding
+        departments of College of Engineering Trivandrum which started
+        functioning in 1939. Right from its inception, the department has been
+        rated very high in academic circles. It provides quality technical
+        education to young minds with a zeal to contribute to the advancement
+        of human knowledge and progress. We, the students, staff and faculty
+        at EE strive to take the global presence of CET to the next level.
+      </p>
+    </div>
+  </section>
+  <section class="footer section--light" id="contact">
+    <h1 class="section__title">Contact Us</h1>
+    <div class="footer__content">
+      <div class="contact__people">
+        <div class="people__mobile">
+          Georgin Jacob <br />
+          +91 8078210365
+        </div>
+        <div class="people__mobile">
+          Joseph Kurian <br />
+          +91 9048332239
         </div>
       </div>
-    </section>
-
-    <!-- Pop-up Modals -->
-
-    <div class="modal modal--hidden" id="coming-soon-modal">
-      <div class="modal__close-btn">[close]</div>
-      <div class="modal__modal-image">
-        <img src="./images/logo20.png" alt="" class="modal-image__img" />
+      <div class="social">
+        <div class="social__icon social__icon--fb">
+          <a href="https://facebook.com/profile.php?id=156576864998370&ref=content_filter">
+            <i class="gg-facebook"></i>
+          </a>
+        </div>
+        <div class="social__icon social__icon--fb">
+          <a href="https://instagram.com/teslacet?igshid=1ago43cvtc224">
+            <i class="gg-instagram"></i>
+          </a>
+        </div>
+        <div class="social__icon social__icon--mail">
+          <a href="mailto:teslacet0@gmail.com">
+            <i class="gg-mail"></i>
+          </a>
+        </div>
       </div>
-      <div class="modal__title" style="text-align: center;">
-        Coming Soon
-      </div>
-      <!-- <div class="modal__modal-content">
+    </div>
+  </section>
+
+  <!-- Pop-up Modals -->
+
+  <div class="modal modal--hidden" id="coming-soon-modal">
+    <div class="modal__close-btn">[close]</div>
+    <div class="modal__modal-image">
+      <img src="./images/logo20.png" alt="" class="modal-image__img" />
+    </div>
+    <div class="modal__title" style="text-align: center;">
+      Coming Soon
+    </div>
+    <!-- <div class="modal__modal-content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, debitis.
         Dolor maiores exercitationem incidunt culpa at dolorum architecto alias
         quaerat inventore pariatur corporis distinctio, quibusdam eos rem qui
@@ -237,8 +266,9 @@
         nemo sequi, cumque iste maiores quis quas temporibus eaque corrupti
         beatae officiis.
       </div> -->
-    </div>
+  </div>
 
-    <script src="./js/main.js"></script>
-  </body>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
