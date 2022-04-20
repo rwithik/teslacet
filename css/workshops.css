@@ -342,6 +342,8 @@ a {
   background-color: #fffefa;
   color: #14121f;
   margin-bottom: 1rem;
+  text-decoration: none !important;
+ 
 }
 
 .card__register--disabled {
