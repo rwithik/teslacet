@@ -40,6 +40,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  color: #f0f1f3;
 }
 
 section {
@@ -116,12 +117,12 @@ a {
 }
 
 .section--dark {
-  background-color: #14121f;
-  color: #fffefa;
+  background-color: #14121f ;
+  color: #f0f1f3;
 }
 
 .section--light {
-  background-color: #fffefa;
+  background-color: #f0f1f3;
   color: #14121f;
 }
 
@@ -146,7 +147,7 @@ a {
   width: 48%;
   height: auto;
   margin: 1% 1%;
-  background-color: #29253f;
+  background-color: #11161f;
   color: #fffefa;
   border-radius: 5px;
   overflow: hidden;
@@ -566,6 +567,7 @@ a {
 
 .landing__text {
   margin-top: 1rem;
+  
 }
 
 .sponsor__img {
